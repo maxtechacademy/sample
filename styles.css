@@ -1,0 +1,338 @@
+/*--------------
+ General 
+--------------*/
+html, body {
+  background: white;
+  font-family: Spectral SC;
+}
+
+/*----------------------
+ side and nav bar 
+----------------------*/
+#wrapper {
+    overflow-x: hidden;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper img {
+  width:100%;
+  border: 3px solid white;
+  border-radius:3px;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#sidebar-wrapper .list-group a:hover {
+  color: cornflowerblue;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 1024px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar.navbar-custom .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
+
+#logo h1 {
+  font-size: 28px;
+  margin: 0;
+  padding: 8px 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family: Staatliches;
+  text-align: center;
+  letter-spacing:1;
+}
+
+#logo h1 a, #logo h1 a:hover {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+@ media (max-width: 768px){
+  #log h1 {
+    font-size:20px;
+  }
+}
+
+/*----------------
+ breadcrumb 
+-----------------*/
+.breadcrumb > li + li:before {
+    content: ">>" !important;
+    padding: 0 5px;
+}
+
+/*-------------
+ Welcome 
+-------------*/
+.welcome{
+  width: 100%;
+  height:50vh;
+  background: url("../Images/anon.jpg") center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin-top: 0;
+}
+
+.welcome:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.welcome .container {
+  z-index: 2;
+}
+
+.welcome h1 {
+  margin: 0 0 10px 0;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 56px;
+  color: white;
+  font-family: Staatliches;
+  letter-spacing: 1px;
+}
+
+.welcome h2{
+  color:white;
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: Oswald;
+}
+
+.welcome h2 span{
+  color: cornflowerblue;
+}
+
+.welcome .button {
+  font-family: Spectral SC;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  border: 3px solid #fff;
+  color: cornflowerblue;
+}
+
+.welcome .button:hover {
+  border-color: #1bac91;
+  background: white;
+}
+
+.welcome .border {
+  border:10px solid blue;
+  border-radius:5px;
+}   
+
+@media (min-width: 1024px) {
+  .welcome {
+    background-attachment: fixed;
+  }
+  .welcome h2{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .welcome {
+    margin-bottom: -150px;
+    height:40vh;
+  }
+  .welcome h2 {
+    font-size:30px;
+  }
+}
+
+@media (max-height: 768px) {
+  .welcome {
+    margin-bottom: -150px;
+    height:80vh;
+  } 
+  .welcome h1 {
+    font-size:25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    height: 85vh;
+  }
+  .welcome h1 {
+    font-size: 25px;
+    line-height: 36px;
+  }
+  .welcome h2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-height: 500px) {
+  .welcome {
+    height: 100vh;
+  }
+}
+
+/*--------------
+ sections 
+--------------*/
+section {
+  padding: 150px 0px;
+  overflow: hidden;
+}
+
+
+.outline { 
+  margin-top:2px;
+  border: #cdcdcd medium solid; 
+  border-radius: 2px; 
+  -moz-border-radius: 2px; 
+  -webkit-border-radius: 2px; 
+}
+
+
+/*--------
+programmes 
+----------*/
+.programmes {
+  margin-bottom: 44px;
+}
+.programmes-info {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.programmes-info img {
+  border-radius: 100%;
+  height: 100px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+.img-design {
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.programmes p {
+  font-family:Oswald;
+}
+
+.programmes h2,h1 {
+  color:cornflowerblue;
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about h3 {
+  font-weight: 300;
+  font-size: 25px;
+  color: #21413c;
+}
+
+.about .icon-box {
+  margin-top: 44px;
+}
+
+.about .icon-box i {
+  font-size: 48px;
+  float: left;
+  color: #1bac91;
+}
+
+.about .icon-box h4 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 60px;
+  color: #21413c;
+}
+
+.about .icon-box p {
+  font-size: 15px;
+  color: #848484;
+  margin-left: 60px;
+}
+
+.footer {
+  background-color: black;
+  padding-top: 0px;
+  color: #313030;
+}
+
+#footer .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  background: black;
+  color: #fff;
+  line-height: 1;
+  padding: 10px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: cornflowerblue;
+  color: aliceblue;
+  text-decoration: none;
+}
+
